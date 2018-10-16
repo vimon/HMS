@@ -6,7 +6,7 @@
    
    $ses_sql = mysqli_query($conn,"select username from users where username = '$user_check' ");
    
-   $row = mysqli_fetch_array($ses_sql,MYSQLI_ASSOC);
+   $row = mysqli_fetch_array($ses_sql,);
    
    $login_session = $row['username'];
    
