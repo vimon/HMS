@@ -1,7 +1,13 @@
 <?php
-   define('DB_SERVER', 'localhost');
-   define('DB_USERNAME', 'root');
-   define('DB_PASSWORD', 'pass');
-   define('DB_DATABASE', 'hms');
-   $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
+   $servername = "localhost";
+   $username = "root";
+   $password = "pass";
+   $dbname = "hms";
+   
+   // Create connection
+   $conn = new mysqli($servername, $username, $password, $dbname);
+   // Check connection
+   if ($conn->connect_error) {
+       die("Connection failed: " . $conn->connect_error);
+   }
 ?>

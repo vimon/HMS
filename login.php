@@ -1,15 +1,5 @@
 <?php
-   $servername = "localhost";
-   $username = "root";
-   $password = "pass";
-   $dbname = "hms";
-   
-   // Create connection
-   $conn = new mysqli($servername, $username, $password, $dbname);
-   // Check connection
-   if ($conn->connect_error) {
-       die("Connection failed: " . $conn->connect_error);
-   }
+  
    $myusername =$_POST['username'];
       $mypassword =$_POST['password']; 
 echo "$myusername";
