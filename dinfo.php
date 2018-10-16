@@ -4,7 +4,9 @@
 
 </head>
  
-<body>
+<body style="background-color:powderblue;">
+
+<form action = "" method = "post">
 <h3>Blood Donation Form</h3>
 
  
