@@ -1,5 +1,5 @@
 <?php
-  
+  include "config.php" ; 
    $myusername =$_POST['username'];
       $mypassword =$_POST['password']; 
 echo "$myusername";
