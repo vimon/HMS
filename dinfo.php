@@ -16,6 +16,7 @@
 <tr>
 <td>FIRST NAME</td>
 <td><input type="text" name="First_Name" maxlength="30"/>
+<br>
 (max 30 characters a-z and A-Z)
 </td>
 </tr>
@@ -24,6 +25,7 @@
 <tr>
 <td>LAST NAME</td>
 <td><input type="text" name="Last_Name" maxlength="30"/>
+<br>
 (max 30 characters a-z and A-Z)
 </td>
 </tr>
@@ -48,6 +50,7 @@
 <td>MOBILE NUMBER</td>
 <td>
 <input type="text" name="Mobile_Number" maxlength="10" />
+<br>
 (10 digit number)
 </td>
 </tr>
@@ -71,6 +74,7 @@ Female <input type="radio" name="Gender" value="Female" />
 <tr>
 <td>CITY</td>
 <td><input type="text" name="City" maxlength="30" />
+<br>
 (max 30 characters a-z and A-Z)
 </td>
 </tr>
@@ -79,6 +83,7 @@ Female <input type="radio" name="Gender" value="Female" />
 <tr>
 <td>PIN CODE</td>
 <td><input type="text" name="Pin_Code" maxlength="6" />
+<br>
 (6 digit number)
 </td>
 </tr>
@@ -87,6 +92,7 @@ Female <input type="radio" name="Gender" value="Female" />
 <tr>
 <td>STATE</td>
 <td><input type="text" name="State" maxlength="30" />
+<br>
 (max 30 characters a-z and A-Z)
 </td>
 </tr>
@@ -115,7 +121,24 @@ Female <input type="radio" name="Gender" value="Female" />
   <option>AB-</option>
   <option>UNKNOWN</option>
 </select></td>
+<!----- Weight ---------------------------------------------------------->
+<tr>
+<td> <strong>Weight</strong></td>
+<td><input type="text" name="weight" /></td>
+</tr>
+<!----- Height---------------------------------------------------------->
+<tr>
+<td> <strong>Height</strong></td>
+<td><input type="text" name="Height" /></td>
+</tr>
+ <!----- Last donation date -------------------------------------------------------->
+<tr>
+<td>Date of last blood donation :</td>
  
+<td>
+<input type="date" name="ldonation">
+</td>
+</tr>
 
 <!----- Submit and Reset ------------------------------------------------->
 <tr>
@@ -132,48 +155,65 @@ Female <input type="radio" name="Gender" value="Female" />
 <!----- Question Answers ----------------------------------------------------------->
 <!----- Question 1 ----------------------------------------------------------->
 <tr>
-<td>Did you ever donate blood before ?</td>
+
+<td>&nbsp&nbsp&nbsp&nbsp Did you ever donate blood before ?</td>
 <td>  </td>
 <td>  </td>
 <td>  
 YES <input type="radio" name="q1" value="yes" />
+&nbsp&nbsp&nbsp&nbsp
 NO <input type="radio" name="q1" value="no" />
 </td>
 </tr>
+
+ 
 <!----- Question 2 ----------------------------------------------------------->
 <tr>
-<td>Do you suffer of any diseases?</td>
+<td>&nbsp&nbsp&nbsp&nbsp Do you suffer of any diseases?</td>
 <td>  </td>
 <td>  </td>
 <td>  
 YES <input type="radio" name="q2" value="yes" />
+&nbsp&nbsp&nbsp&nbsp
 NO <input type="radio" name="q2" value="no" />
 </td>
 </tr>
 
 <!----- Question 3 ----------------------------------------------------------->
 <tr>
-<td>Do you have allergies?</td>
+<td>&nbsp&nbsp&nbsp&nbsp Are you feeling well today?</td>
 <td>  </td>
 <td>  </td>
 <td>  
 YES <input type="radio" name="q3" value="yes" />
+&nbsp&nbsp&nbsp&nbsp
 NO <input type="radio" name="q3" value="no" />
 </td>
 </tr>
 
 <!----- Question 4 ----------------------------------------------------------->
 <tr>
-<td>Do you take medication?</td>
+<td>&nbsp&nbsp&nbsp&nbsp Do you take medication?</td>
 <td>  </td>
 <td>  </td>
 <td>  
 YES <input type="radio" name="q4" value="yes" />
+&nbsp&nbsp&nbsp&nbsp
 NO <input type="radio" name="q4" value="no" />
 </td>
 </tr>
 
-
+<!----- Question 5----------------------------------------------------------->
+<tr>
+<td>&nbsp&nbsp&nbsp&nbsp In the last 3 months have you had a vaccination?</td>
+<td>  </td>
+<td>  </td>
+<td>  
+YES <input type="radio" name="q5" value="yes" />
+&nbsp&nbsp&nbsp&nbsp
+NO <input type="radio" name="q5" value="no" />
+</td>
+</tr>
  </table>
 
 </form>
