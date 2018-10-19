@@ -2,11 +2,15 @@
    include("config.php");
    session_start();
    
-   
-      
+   if(isset($_POST['username'])){
       $username =$_POST['username'];
+  }
+  if(isset($_POST['password'])){
       $password =$_POST['password']; 
+
+  }
       
+     
       $sql = "SELECT * FROM users WHERE username = '$username' and passcode = '$password'";
       $result = mysqli_query($conn,$sql);
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
