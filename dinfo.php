@@ -245,9 +245,9 @@ NO <input type="radio" name="q1.6d" value="no" />
 <td>e)    Chagas disease, babesiosis, HTLVI/II or any<br>
 other chronic infectious disease?</td>
 <td>  
-YES <input type="radio" name="q1.6d" value="yes" />
+YES <input type="radio" name="q1.6e" value="yes" />
 
-NO <input type="radio" name="q1.6d" value="no" />
+NO <input type="radio" name="q1.6e" value="no" />
 </td>
 </tr>
 
@@ -259,9 +259,9 @@ or any other healthcare professional or are you<br>
 waiting to see one (except for routine screening
 appointments)?</td>
 <td>  
-YES <input type="radio" name="q1.6a" value="yes" />
+YES <input type="radio" name="q1.7" value="yes" />
 
-NO <input type="radio" name="q1.6a" value="no" />
+NO <input type="radio" name="q1.7" value="no" />
 </td>
 </tr>
  <!----- Question 8----------------------------------------------------------->
@@ -294,9 +294,9 @@ NO <input type="radio" name="q1.8b" value="no" />
 jaundice at birth), hepatitis or liver disease or <br>a
 positive test for hepatitis?</h3></td>
 <td>  
-YES <input type="radio" name="q1.8a" value="yes" />
+YES <input type="radio" name="q1.9" value="yes" />
 
-NO <input type="radio" name="q1.8a" value="no" />
+NO <input type="radio" name="q1.9" value="no" />
 </td>
 </tr>
 <tr>
@@ -348,9 +348,9 @@ NO <input type="radio" name="q1.10" value="no" />
   <td>1.11)    Have you ever had malaria or an unexplained fever<br>
 associated with travel?</td>
 <td>  
-YES <input type="radio" name="q1.10" value="yes" />
+YES <input type="radio" name="q1.11" value="yes" />
 
-NO <input type="radio" name="q1.10" value="no" />
+NO <input type="radio" name="q1.11" value="no" />
 </td>
 </tr>
 <tr>
@@ -396,9 +396,9 @@ with illegal or non-prescribed drugs including<br>
 body-building drugs or cosmetics (even if this was<br>
 only once or a long time ago)?</td>
 <td>  
-YES <input type="radio" name="q2.3" value="yes" />
+YES <input type="radio" name="q2.4" value="yes" />
 
-NO <input type="radio" name="q2.3" value="no" />
+NO <input type="radio" name="q2.4" value="no" />
 </td>
 </tr>
 
