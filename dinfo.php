@@ -15,7 +15,7 @@
 <!----- First Name ---------------------------------------------------------->
 <tr>
 <td>FIRST NAME</td>
-<td><input type="text" name="First_Name" maxlength="30"/>
+<td><input type="text" name="first_name" maxlength="30"/>
 <br>
 (max 30 characters a-z and A-Z)
 </td>
@@ -24,7 +24,7 @@
 <!----- Last Name ---------------------------------------------------------->
 <tr>
 <td>LAST NAME</td>
-<td><input type="text" name="Last_Name" maxlength="30"/>
+<td><input type="text" name="last_name" maxlength="30"/>
 <br>
 (max 30 characters a-z and A-Z)
 </td>
@@ -42,14 +42,14 @@
 <!----- Email Id ---------------------------------------------------------->
 <tr>
 <td>EMAIL ID</td>
-<td><input type="text" name="Email_Id" maxlength="100" /></td>
+<td><input type="text" name="emailid" maxlength="100" /></td>
 </tr>
  
 <!----- Mobile Number ---------------------------------------------------------->
 <tr>
 <td>MOBILE NUMBER</td>
 <td>
-<input type="text" name="Mobile_Number" maxlength="10" />
+<input type="text" name="mobnum" maxlength="10" />
 <br>
 (10 digit number)
 </td>
@@ -59,21 +59,21 @@
 <tr>
 <td>GENDER</td>
 <td>
-Male <input type="radio" name="Gender" value="Male" />
-Female <input type="radio" name="Gender" value="Female" />
+Male <input type="radio" name="gender" value="Male" />
+Female <input type="radio" name="gender" value="Female" />
 </td>
 </tr>
  
 <!----- Address ---------------------------------------------------------->
 <tr>
 <td>ADDRESS <br /><br /><br /></td>
-<td><textarea name="Address" rows="4" cols="30"></textarea></td>
+<td><textarea name="address" rows="4" cols="30"></textarea></td>
 </tr>
  
 <!----- City ---------------------------------------------------------->
 <tr>
 <td>CITY</td>
-<td><input type="text" name="City" maxlength="30" />
+<td><input type="text" name="city" maxlength="30" />
 <br>
 (max 30 characters a-z and A-Z)
 </td>
@@ -82,7 +82,7 @@ Female <input type="radio" name="Gender" value="Female" />
 <!----- Pin Code ---------------------------------------------------------->
 <tr>
 <td>PIN CODE</td>
-<td><input type="text" name="Pin_Code" maxlength="6" />
+<td><input type="text" name="pincode" maxlength="6" />
 <br>
 (6 digit number)
 </td>
@@ -91,7 +91,7 @@ Female <input type="radio" name="Gender" value="Female" />
 <!----- State ---------------------------------------------------------->
 <tr>
 <td>STATE</td>
-<td><input type="text" name="State" maxlength="30" />
+<td><input type="text" name="state" maxlength="30" />
 <br>
 (max 30 characters a-z and A-Z)
 </td>
@@ -100,7 +100,7 @@ Female <input type="radio" name="Gender" value="Female" />
 <!----- Country ---------------------------------------------------------->
 <tr>
 <td><strong>COUNTRY</strong></td>
-<td><input type="text" name="Country" value="India" readonly="readonly" /></td>
+<td><input type="text" name="country" value="India" readonly="readonly" /></td>
 </tr>
 <!----- Occupation ---------------------------------------------------------->
 <tr>
@@ -129,14 +129,14 @@ Female <input type="radio" name="Gender" value="Female" />
 <!----- Height---------------------------------------------------------->
 <tr>
 <td> <strong>Height</strong></td>
-<td><input type="text" name="Height" /></td>
+<td><input type="text" name="height" /></td>
 </tr>
  <!----- Last donation date -------------------------------------------------------->
 <tr>
 <td>Date of last blood donation :</td>
  
 <td>
-<input type="date" name="ldonation">
+<input type="date" name="lastdonation">
 </td>
 </tr>
 <tr>
