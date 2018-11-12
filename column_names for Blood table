@@ -14,28 +14,28 @@ blood
 weight
 height
 lastdonation
-q1.1
-q1.2
-q1.3
-q1.4
-q1.5
-q1.6a
-q1.6b
-q1.6c
-q1.6d
-q1.6e
-q1.7
-q1.8a
-q1.8b
-q1.9
-q1.9a
-q1.9b
-q1.9c
-q1.10
-q1.11
-q2.1
-q2.2
-q2.3
-q2.4
+q1.1 yes
+q1.2 yes
+q1.3 no
+q1.4 no
+q1.5 no
+q1.6a no
+q1.6b no
+q1.6c no
+q1.6d no
+q1.6e no
+q1.7 no
+q1.8a no
+q1.8b no
+q1.9 no
+q1.9a no
+q1.9b no
+q1.9c no
+q1.10 no
+q1.11 no
+q2.1 no
+q2.2 no
+q2.3 no
+q2.4 no
 eligible
 curdate
