@@ -6,7 +6,7 @@
  
 <body style="background-color:powderblue;">
 
-<form action = "" method = "post">
+<form action = "check.php" method = "post">
 <h3>Blood Donation Form</h3>
 
  
