@@ -1,4 +1,5 @@
 <?php
+include("config.php");
 $first_name=$_POST["first_name"];
 $last_name=$_POST["last_name"];
 $bday=$_POST["bday"];
@@ -40,7 +41,7 @@ $q2.3=$_POST["q2.3"];
 $q2.4=$_POST["q2.4"];
    
    
-$query="insert into stud values('$roll','$name')";
+$query="insert into stud values('$first_name','$last_name','$bday','$emailid','$mobnum','$gender','$address','$city','$pincode','$state','$country','$occupation','$blood','weight','height','lastdonation','$q1.1','$q1.2','$q1.3','$q1.4','$q1.5','$q1.6a','$q1.6b','$q1.6c','$q1.6d','$q1.6e','$q1.7','$q1.8a','$q1.8b','$q1.9','$q1.9a','$q1.9b','$q1.9c','$q1.10','$q1.11','$q2.1','$q2.2','$q2.3','$q2.4','yes',2018-11-15)";
 $result = mysqli_query($conn,$query);
 if (!$result) {
     die('Invalid query: ' . mysql_error());
