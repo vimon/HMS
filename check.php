@@ -46,6 +46,7 @@ $result = mysqli_query($conn,$query);
 if (!$result) {
     die('Invalid query: ' . mysql_error());
 }
-echo "Data Saved";
+echo "Data Saved in bloodtable";
+
 mysql_close($conn);
 ?>
