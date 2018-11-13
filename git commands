@@ -1,0 +1,13 @@
+git config --global user.name "vimon"
+git config --global user.email vimonpv@gmail.com
+git config --list
+git init
+git clone https://github.com/vimon/HMS.git
+git status
+cd HMS
+git add .
+git status
+git commit -m "echo message upadted"
+git push
+
+
