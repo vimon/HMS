@@ -1,7 +1,9 @@
 <html>
 <head>
 <title>Blood Donour form</title>
-
+<?php
+require_once 'navi/nav.php';
+?>
 </head>
  
 <body style="background-color:powderblue;">

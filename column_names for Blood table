@@ -14,28 +14,6 @@ blood
 weight
 height
 lastdonation
-q1.1 yes
-q1.2 yes
-q1.3 no
-q1.4 no
-q1.5 no
-q1.6a no
-q1.6b no
-q1.6c no
-q1.6d no
-q1.6e no
-q1.7 no
-q1.8a no
-q1.8b no
-q1.9 no
-q1.9a no
-q1.9b no
-q1.9c no
-q1.10 no
-q1.11 no
-q2.1 no
-q2.2 no
-q2.3 no
-q2.4 no
+|| $q1_1=="no" || $q1_2=="no" || $q1_3=="yes" || $q1_4=="yes" || $q1_5=="yes" || $q1_6a=="yes" || $q1_6b=="yes" || $q1_6c=="yes" || $q1_6d=="yes"|| $q1_6e=="yes" || $q1_7=="yes" || $q1_8a=="yes" || $q1_8b=="yes" || $q1_9=="yes" || $q1_9a=="yes" || $q1_9b=="yes" || $q1_9c=="yes" || $q1_10=="yes" || $q1_11=="yes" || $q2_1=="yes" || $q2_2=="yes" || $q2_3=="yes" || $q2_4=="yes"
 eligible
 curdate
