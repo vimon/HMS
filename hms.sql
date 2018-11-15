@@ -3,8 +3,8 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 12, 2018 at 12:12 PM
--- Server version: 5.5.59-0ubuntu0.14.04.1
+-- Generation Time: Nov 15, 2018 at 12:51 PM
+-- Server version: 5.5.57-0ubuntu0.14.04.1
 -- PHP Version: 5.5.9-1ubuntu4.26
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `Bloodtable` (
   `last_name` varchar(30) NOT NULL,
   `bday` date NOT NULL,
   `emailid` varchar(50) NOT NULL,
-  `mobnum` int(10) NOT NULL,
+  `mobnum` varchar(10) NOT NULL,
   `gender` varchar(5) NOT NULL,
   `address` varchar(100) NOT NULL,
   `city` varchar(20) NOT NULL,
@@ -66,9 +66,19 @@ CREATE TABLE IF NOT EXISTS `Bloodtable` (
   `q2.2` varchar(3) NOT NULL,
   `q2.3` varchar(3) NOT NULL,
   `q2.4` varchar(3) NOT NULL,
-  `eligible` varchar(3) NOT NULL,
-  `curdate` date NOT NULL
+  `eligible` varchar(10) NOT NULL,
+  `curdate` date NOT NULL,
+  PRIMARY KEY (`mobnum`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `Bloodtable`
+--
+
+INSERT INTO `Bloodtable` (`first_name`, `last_name`, `bday`, `emailid`, `mobnum`, `gender`, `address`, `city`, `pincode`, `state`, `country`, `occupation`, `blood`, `weight`, `height`, `lastdonation`, `q1.1`, `q1.2`, `q1.3`, `q1.4`, `q1.5`, `q1.6a`, `q1.6b`, `q1.6c`, `q1.6d`, `q1.6e`, `q1.7`, `q1.8a`, `q1.8b`, `q1.9`, `q1.9a`, `q1.9b`, `q1.9c`, `q1.10`, `q1.11`, `q2.1`, `q2.2`, `q2.3`, `q2.4`, `eligible`, `curdate`) VALUES
+('raj', '', '1993-11-11', '', '1234567891', 'Male', '', '', 0, '', 'India', '', '', 0, 0, '0000-00-00', 'yes', 'yes', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'donated', '2018-11-15'),
+('vishnu', '', '1993-10-10', '', '7894561237', 'Male', '', '', 0, '', 'India', '', '', 0, 0, '0000-00-00', 'yes', 'yes', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'donated', '2018-11-15'),
+('vimon', '', '1993-09-13', '', '8129831374', 'Male', '', '', 0, '', 'India', '', '', 0, 0, '0000-00-00', 'yes', 'yes', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'yes', '2018-11-15');
 
 -- --------------------------------------------------------
 
@@ -82,7 +92,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `passcode` varchar(255) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `users`

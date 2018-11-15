@@ -47,7 +47,7 @@
         <div class="scroll"></div>-->
        
                <a href="dinfo.php" ><button class="btn btn-large btn-danger" style="height: 70px; width: 200px;" > <font color="red"><h1>Blood Form</h1></font> </button></a>
-               <a href="../dinfo.php" ><button class="btn btn-large btn-danger" style="height: 70px; width: 200px;" > <font color="red"><h1>Donation</h1></font> </button></a>
+               <a href="donate.php" ><button class="btn btn-large btn-danger" style="height: 70px; width: 200px;" > <font color="red"><h1>Donation</h1></font> </button></a>
                <a href="../dinfo.php" ><button class="btn btn-large btn-danger" style="height: 70px; width: 200px;" > <font color="red"><h1>Donour Info</h1></font> </button></a>
                <a href="login.php" ><button class="btn btn-large btn-danger" style="height: 70px; width: 200px;" > <font color="red"><h1>Login</h1></font> </button></a>
                <a href="logout.php" ><button class="btn btn-large btn-danger" style="height: 70px; width: 200px;" > <font color="red"><h1>Log out</h1></font> </button></a>
