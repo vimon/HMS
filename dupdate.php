@@ -5,8 +5,8 @@ require_once 'navi/nav.php';
 $first_name=$_POST["first_name"];
 $bday=$_POST["bday"];
 $mobnum=$_POST["mobnum"];
-
-$query="update Bloodtable set eligible='donated' where first_name='$first_name' and bday='$bday' and mobnum='$mobnum'";
+$eli="yes";
+$query="update Bloodtable set eligible='donated' where first_name='$first_name' and bday='$bday' and mobnum='$mobnum' and eligible='$eli'";
 $result = mysqli_query($conn,$query);
 
 $eligi="donated";
@@ -22,7 +22,10 @@ $sql = "SELECT * FROM Bloodtable WHERE first_name='$first_name' and bday='$bday'
          
       if($count == 0) {
           echo "<br>";
-           echo "Not Matching with database details";
+           echo "Your Not Eligible to donate Blood now ";
+           echo "<br>";
+           echo "Please Fill Blood Donation form";
+            echo "<br>";
       }else {
         echo "<br>";
           echo "updated in database ";
