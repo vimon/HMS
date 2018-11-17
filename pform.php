@@ -69,7 +69,7 @@ Female <input type="radio" name="gender" value="Female" />
 </tr>
 <!----- Department to admit ---------------------------------------------------------->
 <td><strong>Department of admission</strong></td>
-    <td><select name="dadmission" size="1" id="blood">
+    <td><select name="dadmission" size="1" id="dadmission">
   <option value="">--select--</option>
   <option>Acupuncture</option>
   <option>Cardiology</option>
@@ -83,6 +83,21 @@ Female <input type="radio" name="gender" value="Female" />
   <option>Psychiatry</option>
   
 </select></td>
+
+<!----- Doctor name ---------------------------------------------------------->
+<td><strong>Department of admission</strong></td>
+    <td><select name="dadmission" size="1" id="blood">
+  <option value="">--select--</option>
+  <option>Name1</option>
+  <option>Name2</option>
+  <option>Name3</option>
+  <option>Name4</option>
+  <option>Namey5</option>
+  <option>Namey6 (Skin)</option>
+  <option>Name7</option>
+  <option>Name8y</option>
+  <option>Name9y</option>
+  <option>Name10</option>
 
 
 <!----- Address ---------------------------------------------------------->
