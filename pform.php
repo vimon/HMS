@@ -1,11 +1,15 @@
 <html>
+<?php
+require_once 'navi/pnav.php';
+?>
+
 <head>
 <title>Patient Admission</title>
 </head>
  
 <body style="background-color:powderblue;">
 
-<form action = "pupload.php" method = "post">
+<form action = "" method = "post">
 <h3>Patient Admission form</h3>
 
  
@@ -86,19 +90,29 @@ Female <input type="radio" name="gender" value="Female" />
 
 <!----- Doctor name ---------------------------------------------------------->
 <td><strong>Doctor Name</strong></td>
-    <td><select name="dname" size="1" id="dname>
-  <option value="">--select--</option>
-  <option>Name1</option>
-  <option>Name2</option>
-  <option>Name3</option>
-  <option>Name4</option>
-  <option>Namey5</option>
-  <option>Namey6 (Skin)</option>
-  <option>Name7</option>
-  <option>Name8y</option>
-  <option>Name9y</option>
-  <option>Name10</option>
-</select></td>
+<?php
+include("config.php");
+
+$query1="select dname from doctor";
+$result1 = mysqli_query($conn,$query1);
+
+if (!$result1) {
+    die('Invalid query: ' . mysql_error());
+}
+?>
+<td><select name="dname" size="1" id="dname"> 
+    <option value="0">Please Select</option>
+        <?php
+            while($row = mysqli_fetch_array($result1,MYSQLI_ASSOC))
+            {
+            ?>
+            <option value = "<?php echo($row['dname'])?>" >
+                <?php echo($row['dname']) ?>
+            </option>
+            <?php
+            }               
+        ?>
+        </select></td>
 
 <!----- Address ---------------------------------------------------------->
 <tr>
@@ -184,9 +198,35 @@ Female <input type="radio" name="gender" value="Female" />
 </table>
 
 
+<?php
+$first_name=$_POST["first_name"];
+$last_name=$_POST["last_name"];
+$bday=$_POST["bday"];
+$emailid=$_POST["emailid"];
+$mobnum=$_POST["mobnum"];
+$gender=$_POST["gender"];
+$address=$_POST["address"];
+$city=$_POST["city"];
+$pincode=$_POST["pincode"];
+$state=$_POST["state"];
+$country=$_POST["country"];
+$occupation=$_POST["occupation"];
+$blood=$_POST["blood"];
+$dep=$_POST["dep"];
+$dname=$_POST["dname"];
+$wno=$_POST["wno"];
+$pid="";
+$symtoms=$_POST["symtoms"];
+$query="insert into ptable values('$pid','$first_name','$last_name','$bday','$emailid','$mobnum','$gender','$address','$city','$pincode','$state','$country','$occupation','$blood','$dep','$dname','$wno','$symtoms')";
+$result = mysqli_query($conn,$query);
+if (!$result) {
+    die('Invalid query: ' . mysql_error());
+}
+echo "<br>";
+echo "Data Saved in ptable";
 
- 
-
+mysql_close($conn);
+?>
 </form>
  
 </body>
