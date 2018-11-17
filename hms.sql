@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 17, 2018 at 10:24 PM
+-- Generation Time: Nov 18, 2018 at 12:05 AM
 -- Server version: 5.5.61-0ubuntu0.14.04.1
 -- PHP Version: 5.5.9-1ubuntu4.26
 
@@ -112,8 +112,44 @@ CREATE TABLE IF NOT EXISTS `doctor` (
 --
 
 INSERT INTO `doctor` (`d_id`, `dname`, `degree`, `dep`, `mon`, `tues`, `wed`, `thurs`, `fri`, `sat`, `sun`, `ldate`, `phnum`, `age`, `exp`, `rate`) VALUES
-(1000, 'Dr. Mrigendra Nath Gantait', 'MBBS, P.G. Certificate in Acupuncture (China)', 'Acupuncture', '1 PM (104)', '', '1 PM (113)', '', '1 PM (113)', '', '', 'from:13/08/2018\r\nto:15/08/2018', '2345687698', 30, 5, '****'),
+(1000, 'Dr. Mrigendra Nath Gantait', 'MBBS, P.G. Certificate in Acupuncture (China)', 'Acupuncture', '1 PM (104)', '', '1 PM (113)', '', '1 PM (113)', '', '', 'from:\r\nto:', '2345687698', 30, 5, '****'),
 (1001, 'Dr Sumanta Chatterjee', 'MBBS, MD (MED), DM (CARD)', 'Cardiology', '9 AM (116)', '9 AM (116)', '7 PM (116)', '', '', '', '', '12/08/2018\r\n13/08/2018\r\n', '9876543210', 32, 7, '****');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ptable`
+--
+
+CREATE TABLE IF NOT EXISTS `ptable` (
+  `pid` int(10) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(30) NOT NULL,
+  `last_name` varchar(30) NOT NULL,
+  `bday` date NOT NULL,
+  `emailid` varchar(50) NOT NULL,
+  `mobnum` varchar(10) NOT NULL,
+  `gender` varchar(5) NOT NULL,
+  `address` varchar(100) NOT NULL,
+  `city` varchar(20) NOT NULL,
+  `pincode` int(10) NOT NULL,
+  `state` varchar(20) NOT NULL,
+  `country` varchar(20) NOT NULL,
+  `occupation` varchar(30) NOT NULL,
+  `blood` varchar(5) NOT NULL,
+  `dep` varchar(30) NOT NULL,
+  `dname` varchar(50) NOT NULL,
+  `wno` int(4) NOT NULL,
+  `symtoms` text NOT NULL,
+  PRIMARY KEY (`pid`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=104 ;
+
+--
+-- Dumping data for table `ptable`
+--
+
+INSERT INTO `ptable` (`pid`, `first_name`, `last_name`, `bday`, `emailid`, `mobnum`, `gender`, `address`, `city`, `pincode`, `state`, `country`, `occupation`, `blood`, `dep`, `dname`, `wno`, `symtoms`) VALUES
+(100, 'pipiri', 'v', '1997-10-30', 'pippiri@gmail.com', '9876543321', 'Male', 'mundur', 'thrissur', 354643, 'kerala', 'India', 'student', 'B+', 'Acupuncture', 'Dr. Mrigendra Nath Gantait', 8, 'lazy'),
+(101, 'pipiri 2', 'v', '1997-10-30', 'pippiri@gmail.com', '9876543321', 'Male', 'mundur', 'thrissur', 354643, 'kerala', 'India', 'student', 'B+', 'Acupuncture', 'Dr. Mrigendra Nath Gantait', 8, 'lazy');
 
 -- --------------------------------------------------------
 
