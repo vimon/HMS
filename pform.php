@@ -158,6 +158,21 @@ Female <input type="radio" name="gender" value="Female" />
   <option>UNKNOWN</option>
 </select></td>
 
+<!----- Ward number ---------------------------------------------------------->
+<td><strong>Ward number *</strong></td>
+    <td><select name="wno" size="1" id="wno">
+  <option value="">--select--</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>8</option>
+  <option>9</option>
+  <option>General</option>
+</select></td>
+
 
 <!----- Submit and Reset ------------------------------------------------->
 <tr>
