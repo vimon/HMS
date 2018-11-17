@@ -85,8 +85,8 @@ Female <input type="radio" name="gender" value="Female" />
 </select></td>
 
 <!----- Doctor name ---------------------------------------------------------->
-<td><strong>Department of admission</strong></td>
-    <td><select name="dadmission" size="1" id="blood">
+<td><strong>Doctor Name</strong></td>
+    <td><select name="dname" size="1" id="dname>
   <option value="">--select--</option>
   <option>Name1</option>
   <option>Name2</option>
