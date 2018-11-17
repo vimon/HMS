@@ -3,8 +3,8 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 15, 2018 at 12:51 PM
--- Server version: 5.5.57-0ubuntu0.14.04.1
+-- Generation Time: Nov 17, 2018 at 10:24 PM
+-- Server version: 5.5.61-0ubuntu0.14.04.1
 -- PHP Version: 5.5.9-1ubuntu4.26
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -78,7 +78,42 @@ CREATE TABLE IF NOT EXISTS `Bloodtable` (
 INSERT INTO `Bloodtable` (`first_name`, `last_name`, `bday`, `emailid`, `mobnum`, `gender`, `address`, `city`, `pincode`, `state`, `country`, `occupation`, `blood`, `weight`, `height`, `lastdonation`, `q1.1`, `q1.2`, `q1.3`, `q1.4`, `q1.5`, `q1.6a`, `q1.6b`, `q1.6c`, `q1.6d`, `q1.6e`, `q1.7`, `q1.8a`, `q1.8b`, `q1.9`, `q1.9a`, `q1.9b`, `q1.9c`, `q1.10`, `q1.11`, `q2.1`, `q2.2`, `q2.3`, `q2.4`, `eligible`, `curdate`) VALUES
 ('raj', '', '1993-11-11', '', '1234567891', 'Male', '', '', 0, '', 'India', '', '', 0, 0, '0000-00-00', 'yes', 'yes', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'donated', '2018-11-15'),
 ('vishnu', '', '1993-10-10', '', '7894561237', 'Male', '', '', 0, '', 'India', '', '', 0, 0, '0000-00-00', 'yes', 'yes', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'donated', '2018-11-15'),
-('vimon', '', '1993-09-13', '', '8129831374', 'Male', '', '', 0, '', 'India', '', '', 0, 0, '0000-00-00', 'yes', 'yes', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'yes', '2018-11-15');
+('vimon', '', '1993-09-13', '', '8129831374', 'Male', '', '', 0, '', 'India', '', 'A+', 0, 0, '0000-00-00', 'yes', 'yes', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', '2018-11-15'),
+('vimon', 'pv', '2018-11-12', 'vimonpv@gmail.com', '8129831375', 'Male', '', 'thrissur', 680552, 'kerala', 'India', '', 'A+', 60, 175, '2018-11-15', 'yes', 'yes', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'donated', '2018-11-15');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `doctor`
+--
+
+CREATE TABLE IF NOT EXISTS `doctor` (
+  `d_id` int(4) NOT NULL AUTO_INCREMENT,
+  `dname` varchar(30) NOT NULL,
+  `degree` text NOT NULL,
+  `dep` varchar(30) NOT NULL,
+  `mon` varchar(15) NOT NULL,
+  `tues` varchar(15) NOT NULL,
+  `wed` varchar(15) NOT NULL,
+  `thurs` varchar(15) NOT NULL,
+  `fri` varchar(15) NOT NULL,
+  `sat` varchar(15) NOT NULL,
+  `sun` varchar(15) NOT NULL,
+  `ldate` text NOT NULL,
+  `phnum` varchar(15) NOT NULL,
+  `age` decimal(5,0) NOT NULL,
+  `exp` int(10) NOT NULL,
+  `rate` varchar(10) NOT NULL,
+  PRIMARY KEY (`d_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1002 ;
+
+--
+-- Dumping data for table `doctor`
+--
+
+INSERT INTO `doctor` (`d_id`, `dname`, `degree`, `dep`, `mon`, `tues`, `wed`, `thurs`, `fri`, `sat`, `sun`, `ldate`, `phnum`, `age`, `exp`, `rate`) VALUES
+(1000, 'Dr. Mrigendra Nath Gantait', 'MBBS, P.G. Certificate in Acupuncture (China)', 'Acupuncture', '1 PM (104)', '', '1 PM (113)', '', '1 PM (113)', '', '', 'from:13/08/2018\r\nto:15/08/2018', '2345687698', 30, 5, '****'),
+(1001, 'Dr Sumanta Chatterjee', 'MBBS, MD (MED), DM (CARD)', 'Cardiology', '9 AM (116)', '9 AM (116)', '7 PM (116)', '', '', '', '', '12/08/2018\r\n13/08/2018\r\n', '9876543210', 32, 7, '****');
 
 -- --------------------------------------------------------
 
