@@ -49,7 +49,7 @@
                <a href="dinfo.php" ><button class="btn btn-large btn-danger" style="height: 80px; width: 200px;" > <font color="red"><h1>BD Form</h1></font> </button></a>
                <a href="donate.php" ><button class="btn btn-large btn-danger" style="height: 80px; width: 200px;" > <font color="red"><h1>Update BD</h1></font> </button></a>
                <a href="bdfull.php" ><button class="btn btn-large btn-danger" style="height: 80px; width: 300px;" > <font color="red"><h1>B.Donour Info</h1></font> </button></a>
-               <a href="login.php" ><button class="btn btn-large btn-danger" style="height: 80px; width: 200px;" > <font color="red"><h1>Login</h1></font> </button></a>
+               
                <a href="logout.php" ><button class="btn btn-large btn-danger" style="height: 80px; width: 200px;" > <font color="red"><h1>Log out</h1></font> </button></a>
                 
     

@@ -49,7 +49,13 @@
                <a href="doctor.php" ><button class="btn btn-large btn-danger" style="height: 80px; width: 200px;" > <font color="red"><h2>Doctor Details</h2></font> </button></a>
                <a href="dleave.php" ><button class="btn btn-large btn-danger" style="height: 80px; width: 300px;" > <font color="red"><h2>Doctor Leave Updation</h2></font> </button></a>
                
-                
+               <a href="logout.php" ><button class="btn btn-large btn-danger" style="height: 80px; width: 200px;" > <font color="red"><h2>Log out</h2></font> </button></a>
+               <button onclick="goBack()">Go Back</button>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
     
 
    

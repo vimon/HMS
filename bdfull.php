@@ -1,12 +1,41 @@
 <html>
 
+<button onclick="goBack()">Go Back</button>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+<a href="logout.php" ><button class="btn btn-large btn-danger" style="height: 80px; width: 150px;" > <font color="red"><h2>Log out</h2></font> </button></a>
+<form action = "" method = "post">
+<!----- Blood Group ---------------------------------------------------------->
+<td><strong>Blood Group *</strong></td>
+    <td><select name="blood" size="1" id="blood">
+  <option value="">--select--</option>
+  <option>O+</option>
+  <option>O-</option>
+  <option>A+</option>
+  <option>A-</option>
+  <option>B+</option>
+  <option>B-</option>
+  <option>AB+</option>
+  <option>AB-</option>
+  <option>UNKNOWN</option>
+</select></td>
+<!----- Submit and Reset ------------------------------------------------->
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</td>
+</form>
 <?php
 
  include("config.php");
- require_once 'navi/nav.php';
+ $blood=$_POST["blood"];
  echo "<h3>Donated Blood Donours infomation</h3>";
  $elig="donated";
-$query="select * from Bloodtable where eligible='$elig'";
+$query="select * from Bloodtable where eligible='$elig' and blood='$blood'";
 $result = mysqli_query($conn,$query);
 
 if (!$result) {

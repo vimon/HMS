@@ -21,14 +21,51 @@
       // If result matched $myusername and $mypassword, table row must be 1 row
             
          
-      if($count == 1) {
+      if($row["type"]=="buser") 
+      {
             $_SESSION['login_user'] = $username;
-         header("location: dinfo.php");
-      }else {
+            header("location: dinfo.php");
+      }
+      else if($row["type"]=="badmin")
+      {
+        header("location: donate.php");
+      }
+      else if($row["type"]=="admin")
+      {
+        header("location: pform.php");
+      }
+      else if($row["type"]=="doctor")
+      {
+        header("location: doctor.php");
+      }
+      else if($row["type"]=="patient")
+      {
+        header("location: panav.php");
+      }
+      else  {
          $error = "Your Login Name or Password is invalid";
       }
 
+/*echo "$login_session";
+
+if($login_session)
+{
+		$s="select type from users where id='$username'";
+$result1=mysqli_query($conn,$s);
+echo mysql_error();
+$row1=mysql_fetch_array($result1);
+		if($row1["type"]=="buser")
+{
+
+header("location: dinfo.php");
+}
+else if($row["type"]=="badmin")
+{
+    header("location: dinfo.php");
+}
+} */ 
 ?>
+
 <html>
    
    <head>

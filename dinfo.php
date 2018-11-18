@@ -1,10 +1,17 @@
 <html>
 <head>
 <title>Blood Donour form</title>
-<?php
-require_once 'navi/nav.php';
-?>
+
 </head>
+<button onclick="goBack()">Go Back</button>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+<a href="dinfo.php" ><button class="btn btn-large btn-danger" style="height: 80px; width: 200px;" > <font color="red"><h1>BD Form</h1></font> </button></a>
+<a href="bdfull.php" ><button class="btn btn-large btn-danger" style="height: 80px; width: 300px;" > <font color="red"><h1>B.Donour Info</h1></font> </button></a>
+<a href="logout.php" ><button class="btn btn-large btn-danger" style="height: 80px; width: 200px;" > <font color="red"><h1>Log out</h1></font> </button></a>
  
 <body style="background-color:powderblue;">
 

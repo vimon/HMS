@@ -47,9 +47,11 @@
         <div class="scroll"></div>-->
        
                <a href="psearch.php" ><button class="btn btn-large btn-danger" style="height: 80px; width: 400px;" > <font color="red"><h2>Patient Details for doctors</h2></font> </button></a>
-               <a href="padmin.php" ><button class="btn btn-large btn-danger" style="height: 80px; width: 300px;" > <font color="red"><h2>Patient detail for admin</h2></font> </button></a>
+               <a href="padmin.php" ><button class="btn btn-large btn-danger" style="height: 80px; width: 300px;" > <font color="red"><h2>Patient details</h2></font> </button></a>
                <a href="pform.php" ><button class="btn btn-large btn-danger" style="height: 80px; width: 300px;" > <font color="red"><h2>Patient Admission form</h2></font> </button></a>
-               
+               <a href="bdfull.php" ><button class="btn btn-large btn-danger" style="height: 80px; width: 200px;" > <font color="red"><h2>Blood Bank</h2></font> </button></a>
+               <a href="doctor.php" ><button class="btn btn-large btn-danger" style="height: 80px; width: 200px;" > <font color="red"><h2>Doctor info</h2></font> </button></a>
+               <a href="logout.php" ><button class="btn btn-large btn-danger" style="height: 80px; width: 150px;" > <font color="red"><h2>Log out</h2></font> </button></a>
                 
     
 
