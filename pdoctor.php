@@ -11,13 +11,6 @@ function goBack() {
  include("config.php");
  
 
- if(isset($_POST['dname'])){
-    $dname =$_POST['dname'];
-}
-if(isset($_POST['dep'])){
-    $dep =$_POST['dep']; 
-
-}
  ?>
  <br>
  <br>
@@ -66,6 +59,13 @@ if (!$result1) {
                </form>
 <?php
  
+ if(isset($_POST['dname'])){
+    $dname =$_POST['dname'];
+}
+if(isset($_POST['dep'])){
+    $dep =$_POST['dep']; 
+
+}
  echo "<h3>Doctor Details</h3>";
  
 $query="select * from doctor where dname='$dname' or dep='$dep'";
@@ -112,7 +112,7 @@ if (!$result) {
           <td>{$row['thurs']}</td>
           <td>{$row['fri']}</td>
           <td>{$row['sat']}</td>
-          <td>{$row['sunday']}</td>
+          <td>{$row['sun']}</td>
           <td>{$row['rate']}</td>
 
            </tr>\n";
